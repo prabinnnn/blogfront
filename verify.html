@@ -37,9 +37,25 @@
             <!-- Email input -->
             <div class="mb-3">
               <label class="form-label">Email address</label>
-              <input type="email" class="form-control" />
+              <input
+                type="email"
+                class="form-control"
+                placeholder="john@gmail.com"
+                value="parbin123@gmail.com"
+                disabled
+              />
             </div>
-            <button type="button" class="btn btn-primary">send Email</button>
+            <div class="mb-3">
+              <label class="form-label">New Password</label>
+              <input type="password" class="form-control" required />
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Token</label>
+              <input type="enum" class="form-control" placeholder="123456" />
+            </div>
+            <button type="button" class="btn btn-primary">
+              Change Password
+            </button>
             <button type="button" class="btn btn-secondary">Reset</button>
           </form>
           <div class="text-center mt-3">
