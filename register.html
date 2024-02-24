@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Meta tags -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title -->
     <title>Document</title>
+    <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -12,6 +15,7 @@
     />
   </head>
   <body>
+    <!-- Centered content using Bootstrap classes -->
     <div
       class="h-100 d-flex justify-content-center align-self-center align-items-center py-2 w-100 m-auto"
     >
@@ -31,30 +35,29 @@
               />
             </div>
             <!-- Form title -->
-            <h1 class="h4 mb-3 text-center fw-normal">register</h1>
-            <!-- Email input -->
+            <h1 class="h4 mb-3 text-center fw-normal">Register</h1>
+            <!-- Name input -->
             <div class="mb-2">
-              <label class="form-label">name</label>
+              <label class="form-label">Name</label>
               <input type="text" class="form-control" />
             </div>
+            <!-- Email input -->
             <div class="mb-2">
               <label class="form-label">Email address</label>
               <input type="email" class="form-control" required />
             </div>
-            <!-- Password input -->
+            <!-- Phone input -->
             <div class="mb-2">
               <label class="form-label">Phone</label>
               <input type="tel" class="form-control" required />
             </div>
+            <!-- Submit and Reset buttons -->
             <button type="button" class="btn btn-primary">Sign Up</button>
             <button type="button" class="btn btn-secondary">Reset</button>
           </form>
-          <!-- Link to register -->
-          <div>
+          <div class="text-center mt-3">
             <hr />
-            <a class="mb-2 text-center text-decoration-none" href="/home"
-              >Go back To</a
-            >
+            <a class="text-decoration-none" href="/login">Go back to Home</a>
           </div>
         </div>
       </div>
