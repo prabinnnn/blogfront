@@ -6,6 +6,9 @@ const sendData = async () => {
       "http://localhost:8000/api/v1/users/registration",
       formData
     );
+    if (result) {
+      document.getElementById("msg").innerHTML = result.data.data;
+    }
   } catch (e) {
     console.log(e);
   }
