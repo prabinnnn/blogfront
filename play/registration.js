@@ -7,8 +7,8 @@ const sendData = async () => {
       formData
     );
     if (result) {
-      document.getElementById("msg");
-      document.getElementById("msg").innerHTML = result.data.data;
+      const msg = document.getElementById("msg");
+      msg.classList.remove(mystyle);
     }
   } catch (e) {
     console.log(e);
