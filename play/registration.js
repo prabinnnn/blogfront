@@ -8,7 +8,8 @@ const sendData = async () => {
     );
     if (result) {
       const msg = document.getElementById("msg");
-      msg.classList.remove(mystyle);
+      msg.classList.remove("d-none");
+      msg.innerHTML = result.data.data;
     }
   } catch (e) {
     console.log(e);
