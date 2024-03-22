@@ -4,7 +4,8 @@ const sendData = async () => {
     const formData = new FormData(form);
     const result = await axios.post(
       "http://localhost:8000/api/v1/users/registration",
-      formData
+      formData,
+      { headers: { "content-type": "multipart/form-data" } }
     );
     if (result) {
       const msg = document.getElementById("msg");
