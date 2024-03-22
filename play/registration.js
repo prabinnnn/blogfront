@@ -7,6 +7,7 @@ const sendData = async () => {
       formData
     );
     if (result) {
+      document.getElementById("msg");
       document.getElementById("msg").innerHTML = result.data.data;
     }
   } catch (e) {
